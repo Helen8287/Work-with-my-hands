@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Любимый Handmade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Мой Любимый Handmade своими руками</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Привет! Я увлекаюсь созданием различных предметов handmade.<br> Как только появляется свободная минутка, стараюсь что-то  смастерить.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="img/photo_2025-03-26_12-26-22.jpg" alt="Handmade Item 1">
+                    <figcaption>Вязаные бусы в подарочной упаковке</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/photo_2025-03-26_12-42-36.jpg" alt="Handmade Item 2" style="width: 300px; height: auto;">
+                    <figcaption>Кружевной медальен из бисера</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/photo_2025-03-26_12-43-14.jpg" alt="Handmade Item 3" style="width: 300px; height: auto;">
+                    <figcaption>Сережки "Бирюза"</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/photo_2025-03-26_12-43-19.jpg" alt="Handmade Item 4" style="width: 300px; height: auto;">
+                    <figcaption>Кружевные сережки из бисера</figcaption>
+                </figure>
+                <figure>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной по электронной почте: <a href="mailto:example@example.com">example@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Мой Любимый Handmade</p>
+    </footer>
+</body>
+</html>
+
+
+### Оформление CSS
+...
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #50b3a2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.resized-image {
+       width: 300px; /* Ширина в пикселях */
+       height: auto; /* Высота будет автоматически подстраиваться чтобы сохранить пропорции */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+...
